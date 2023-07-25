@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Tour of heroes';
+  activeIndex = 1;
+
+  setActive(index: number): void{
+    this.activeIndex = index;
+    console.log(this.activeIndex)
+  }
+  
 }

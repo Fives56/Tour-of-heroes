@@ -1,6 +1,5 @@
 <div>
-    <label for="new-hero">Hero name: </label>
-    <input id="new-hero" #heroName />
+    <input id="new-hero" #heroName placeholder="Hero name:" />
 
     <button type="button" class="add-button" (click)="add(heroName.value); heroName.value=''">
         Add hero
@@ -13,7 +12,8 @@
         </a>
         <button type="button" class="delete"
             title="delete hero" 
-            (click)="delete(hero)">x</button>
+            (click)="delete(hero)">x
+        </button>
     </li>
 </ul>
 

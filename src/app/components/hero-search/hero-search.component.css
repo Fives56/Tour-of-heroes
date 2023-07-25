@@ -4,7 +4,6 @@ label {
     font-size: 1.2rem;
     margin-top: 1rem;
     margin-bottom: .5rem;
-
 }
 
 input {
@@ -45,3 +44,11 @@ ul.search-result {
     margin-top: 0;
     padding-left: 0;
 }
+
+.search-container input::placeholder {
+    color: #435A60;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+

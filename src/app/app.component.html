@@ -1,7 +1,13 @@
 <h1>{{title}}</h1>
 <nav>
-    <a routerLink="/dashboard">Dashboard</a>
-    <a routerLink="/heroes">Heroes</a>
+    <a routerLink="/dashboard" (click)="setActive(1)" [ngClass]="{'active': activeIndex === 1}">
+        Dashboard
+    </a>
+    <a routerLink="/heroes" (click)="setActive(2)" [ngClass]="{'active': activeIndex === 2}">
+        Heroes
+    </a>
+    <a routerLink="/messages" (click)="setActive(3)" [ngClass]="{'active': activeIndex === 3}">
+        Messages
+    </a>
 </nav>
 <router-outlet></router-outlet>
-<app-message></app-message>
